@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+body {
+
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background-color: #F5F5F5;
+    font-family: "Comfortaa", sans-serif;
+    overflow-x: hidden;
+
+}
+
+.header {
+
+    background-color: #F5F5F5;
+    padding: 15px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.logo {
+
+    width: 190px;
+    height: 80px;
+
+}
+
+.navigation {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.nav--links {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+
+}
+
+.link--item {
+
+    color: #222222;
+    font-size: 18px;
+    text-decoration: none;
+
+}
+
+.link--item:hover {
+
+    color: #27A127;
+
+}
+
+.link--item:active {
+
+    color: #155815;
+
+}
+
+.btn {
+
+    padding: 10px 24px;
+    background-color: #27A127;
+    border: 2px solid #27A127;;
+    border-radius: 50px;
+    color: #F5F5F5;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+
+    box-shadow: 0px 0px 25px rgba(39, 161, 39, 0.8);
+
+}
+
+.btn:active {
+
+    box-shadow: none;
+    background-color: #155815;
+    border: 2px solid #155815;
+
+}
+
+.footer {
+
+    padding: 60px 250px;
+    background-color: #222222;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.logo--footer {
+
+    width: 190px;
+    height: 80px;
+    margin-bottom: 35px;
+
+}
+
+.copyright {
+
+    color: #F5F5F5;
+    font-size: 16px;
+    margin-bottom: 15px;
+
+}
+
+.creation {
+
+    color: #F5F5F5;
+    font-size: 12px;
+    font-weight: 300;
+
+}
+
+.footer--links {
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.flink {
+
+    color: #F5F5F5;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+.flink:hover {
+
+    text-decoration: underline;
+
+}
+
+.flink:active {
+
+    font-weight: 800;
+    text-decoration: none;
+
+}
+
+main {
+
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+
+}
+
+.hero {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.text--1 {
+
+    color: #27A127;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 25px;
+
+}
+
+.text--2 {
+
+    color: #222222;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 60px;
+
+}
+
+.buttons {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.btn--2 {
+
+    padding: 10px 24px;
+    background-color: #F5F5F5;
+    border: 2px solid #27A127;
+    border-radius: 50px;
+    color: #27A127;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.btn--2:hover {
+
+    background-color: #27A127;
+    color: #F5F5F5;
+
+}
+
+.btn--2:active {
+
+    background-color: #155815;
+    border: 2px solid #155815;
+
+}
+
+.sections {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 80px;
+
+}
+
+.title {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.label {
+
+    color: #222222;
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 20px;
+
+}
+
+.stroke {
+
+    width: 300px;
+    border: 2px solid #155815;
+
+}
+
+.des {
+
+    color: #155815;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 40px;
+
+}
+
+.content {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.content-text {
+
+    width: 65%;
+    color: #222222;
+    font-size: 23px;
+
+}
+
+.cards {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.card--item {
+
+    padding: 25px 50px;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+
+}
+
+.name {
+
+    color: #222222;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 35px;
+
+}
+
+.text {
+
+    color: #222222;
+    font-size: 20px;
+    font-weight: 300;
+
+}
