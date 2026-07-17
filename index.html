@@ -16,10 +16,10 @@
         <nav class="navigation">
 
             <ul class="nav--links">
-                <li><a href="#" class="link--item">About Us</a></li>
-                <li><a href="#" class="link--item">Features</a></li>
-                <li><a href="#" class="link--item">Testimonials</a></li>
-                <li><a href="#" class="link--item">Contact Us</a></li>
+                <li><a href="#about--us" class="link--item">About Us</a></li>
+                <li><a href="#features" class="link--item">Features</a></li>
+                <li><a href="#testimonials" class="link--item">Testimonials</a></li>
+                <li><a href="#contact--us" class="link--item">Contact Us</a></li>
             </ul>
 
             <button class="btn" onclick="document.location='./app/index.html'">Login</button>
@@ -37,10 +37,7 @@
             <div style="width: 65%">
                 <div class="text--1">Banking made single, secure, and designed for everyday life!</div>
                 <div class="text--2">Manage your money with confidence. Send and receive payments, track every transaction, request loans, and stay in control of your finances.</div>
-                <div class="buttons">
-                    <button class="btn open--modal">Sign Up</button>
-                    <button class="btn--2">Learn More</button>
-                </div>
+                <button class="btn--2">Learn More</button>
             </div>
 
             <img src="./images/hero--image.png" alt="image--1" style="width: 35%;">
@@ -48,7 +45,7 @@
         </section>
 
         <!-- About Us -->
-        <section class="sections">
+        <section class="sections" id="about--us">
 
             <div class="title">
                 <div class="label">About Us</div>
@@ -79,16 +76,163 @@
         </section>
 
         <!-- Features -->
-        <section></section>
+        <section class="sections" id="features">
+
+            <div class="title">
+                <div class="label">Features</div>
+                <div class="stroke"></div>
+                <div class="des">Everything You Need in One Place</div>
+            </div>
+
+            <div class="tab--buttons">
+                <button class="btn--2 btn--transfer">Transfer Money</button>
+                <button class="btn--2 btn--loan">Request Loan</button>
+                <button class="btn--2 btn--close">Close Account</button>
+            </div>
+
+            <div>
+                
+                <div class="tab" id="tab--1">
+                    <div class="text">Send and receive money securely. Accept incoming transfers and keep your balance updated in real time and Transfer funds instantly to other users with a simple and secure process.</div>
+                </div>
+
+                <div class="tab" id="tab--2">
+                    <div class="text">Need extra financial support? Submit a loan request directly through your account. Track your application's progress and receive updates without paperwork or unnecessary delays.</div>
+                </div>
+
+                <div class="tab" id="tab--3">
+                    <div class="text">Update your personal information or securely close your account whenever you choose. You are able to update your username, your pin, or if you want to close your account entirely then you can do it fast and simple.</div>
+                </div>
+
+            </div>
+
+        </section>
 
         <!-- Testimonials -->
-        <section></section>
+        <section class="sections" id="testimonials">
+
+            <div class="title">
+                <div class="label">Testimonials</div>
+                <div class="stroke"></div>
+                <div class="des">Read What Our Clients Say About Us</div>
+            </div>
+
+            <div class="slider--content">
+
+                <button class="slider--btn previous"><img src="./images/left--arrow.svg" alt="left--arrow" class="icon"></button>
+
+                <div>
+
+                    <div class="slider" id="slider--1">
+                        <div class="client">Sarah L.</div>
+                        <div class="client--text">"Managing my transactions has never been easier."</div>
+                    </div>
+
+                    <div class="slider" id="slider--2">
+                        <div class="client">Michael D.</div>
+                        <div class="client--text">"I love having all my banking activities organized in one dashboard."</div>
+                    </div>
+
+                    <div class="slider" id="slider--3">
+                        <div class="client">Emily R.</div>
+                        <div class="client--text">"Fast, simple, and exactly what I need for everyday money management."</div>
+                    </div>
+
+                </div>
+
+                <button class="slider--btn next"><img src="./images/right--arrow.svg" alt="right--arrow" class="icon"></button>
+
+            </div>
+
+            <div class="dots">
+                <div class="dot" id="dot--1"></div>
+                <div class="dot" id="dot--2"></div>
+                <div class="dot" id="dot--3"></div>
+            </div>
+
+        </section>
 
         <!-- Contact Us -->
-        <section></section>
+        <section class="sections" id="contact--us">
+
+            <div class="title">
+                <div class="label">Contact Us</div>
+                <div class="stroke"></div>
+                <div class="des" style="text-align: center;">Ready to simplify your banking experience?<br>Send us a message to support you.</div>
+            </div>
+
+            <div class="contact">
+
+                <img src="./images/contact--image.png" alt="image--3" style="width: 50%;">
+
+                <form class="contact--form" action="#" method="POST">
+
+                    <div class="form--content">
+                        <label class="label--form" for="name">First Name</label>
+                        <input class="input" type="text" required>
+                    </div>
+                    
+                        <div class="form--content">
+                        <label class="label--form" for="name">Last Name</label>
+                        <input class="input" type="text" required>
+                    </div>
+
+                    <div class="form--content">
+                        <label class="label--form" for="email">Email</label>
+                        <input class="input" type="email" required>
+                    </div>
+
+                    <div class="form--content">
+                        <label class="label--form" for="message">Message</label>
+                        <textarea class="input" id="message" rows="3" required></textarea>
+                    </div>
+
+                    <button class="btn" type="submit" style="width: 20%;">Send</button>
+
+                </form>
+
+            </div>
+
+        </section>
 
         <!-- FAQ -->
-        <section></section>
+        <section class="sections">
+
+            <div class="title">
+                <div class="label">FAQ</div>
+                <div class="stroke"></div>
+                <div class="des">Frequently Asked Questions by Our Clients</div>
+            </div>
+
+            <div class="faq">
+
+                <div class="faq--item">
+                    <div class="block">
+                        <img src="./images/frame.svg" alt="dropdown-arrow" class="dropdown">
+                        <div class="faq--question">Can I transfer money instantly?</div>
+                    </div>
+                    <div class="faq--answer">Yes. Transfers between users are processed immediately.</div>
+                </div>
+
+                <div class="faq--item">
+                    <div class="block">
+                        <img src="./images/frame.svg" alt="dropdown-arrow" class="dropdown">
+                        <div class="faq--question">Can I apply for a loan?</div>
+                    </div>
+                    <div class="faq--answer">Yes. Loan requests can be submitted directly through your dashboard.</div>
+                </div>
+
+                <div class="faq--item">
+                    <div class="block">
+                        <img src="./images/frame.svg" alt="dropdown-arrow" class="dropdown">
+                        <div class="faq--question">Can I view previous transactions?</div>
+                    </div>
+                    <div class="faq--answer">Absolutely. Every transaction is stored in your personal transaction history.</div>
+                </div>
+
+            </div>
+
+        </section>
 
     </main>
 
@@ -103,10 +247,10 @@
 
         <div>
             <ul class="footer--links">
-                <li><a href="#" class="flink">About Us</a></li>
-                <li><a href="#" class="flink">Features</a></li>
-                <li><a href="#" class="flink">Testimonials</a></li>
-                <li><a href="#" class="flink">Contact Us</a></li>
+                <li><a href="#about--us" class="flink">About Us</a></li>
+                <li><a href="#features" class="flink">Features</a></li>
+                <li><a href="#testimonials" class="flink">Testimonials</a></li>
+                <li><a href="#contact--us" class="flink">Contact Us</a></li>
             </ul>
         </div>
 
@@ -119,6 +263,8 @@
         </div>
 
     </footer>
+
+    <script src="script.js"></script>
     
 </body>
 </html>

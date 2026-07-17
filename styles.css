@@ -14,6 +14,10 @@ body {
 
 .header {
 
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: #F5F5F5;
     padding: 15px 80px;
     display: flex;
@@ -21,6 +25,29 @@ body {
     justify-content: space-between;
     justify-items: center;
     align-items: center;
+
+}
+
+.header--sticky {
+
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+    animation: slideDown 0.45s ease;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+
+}
+
+@keyframes slideDown {
+
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 
 }
 
@@ -204,16 +231,6 @@ main {
 
 }
 
-.buttons {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    gap: 25px;
-
-}
-
 .btn--2 {
 
     padding: 10px 24px;
@@ -337,6 +354,267 @@ main {
 
     color: #222222;
     font-size: 20px;
+
+}
+
+.tab--buttons {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.btn--active {
+
+    background-color: #27A127;
+    color: #F5F5F5;
+
+}
+
+.tab {
+
+    display: none;
+    width: 800px;
+    padding: 40px 60px;
+    margin-top: -40px;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+
+}
+
+.tab--active {
+
+    display: block;
+
+}
+
+.contact {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+
+}
+
+.contact--form {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.form--content {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.label--form {
+
+    color: #222222;
+    font-size: 18px;
     font-weight: 300;
+
+}
+
+.input {
+
+    padding: 12px 20px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+
+}
+
+.input:hover {
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+
+}
+
+.input:focus {
+
+    box-shadow: none;
+    border: 2px solid #27A127;
+
+}
+
+.slider--content {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.icon {
+
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+
+}
+
+.slider {
+
+    display: none;
+    width: 700px;
+    padding: 10px 60px;
+    background-color: none;
+    border: none;
+
+}
+
+.slider--active {
+
+    display: block;
+
+}
+
+.client {
+
+    color: #222222;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 15px;
+
+}
+
+.client--text {
+
+    color: #222222;
+    font-size: 18px;
+
+}
+
+.slider--btn {
+
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.dots {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.dot {
+
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+
+}
+
+.dot--active {
+
+    background-color: #27A127;
+
+}
+
+.faq {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.faq--item {
+
+    width: 700px;
+    padding: 20px 40px;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+
+}
+
+.block {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.dropdown {
+
+    transform: rotate(180deg);
+
+}
+
+.faq--question {
+
+    color: #222222;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.faq--answer {
+
+    display: none;
+    margin-top: 20px;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.faq--active .faq--answer {
+
+    display: block;
+
+}
+
+.faq--active .dropdown {
+
+    transform: none;
+    transition: all 0.35s;
+
+}
+
+.faq--active .faq--question {
+
+    color: #27A127;
 
 }
