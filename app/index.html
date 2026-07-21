@@ -3,40 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/app/styles.css">
     <title>App - BankApp</title>
 </head>
 <body>
 
-    <!-- Login -->
-    <div class="login">
+    <main class="hidden">
 
-        <img src="../images/bankapp_logo_light.png" alt="BankApp Logo"> <!-- Den mou fortwnei thn fotografia -->
-        
-        <div class="login--form">
+        <!-- Login -->
+        <div class="login">
 
-            <div class="form--el">
-                <label for=""></label>
-                <input type="text">
-            </div>
+            <img src="../images/bankapp_logo_light.png" alt="BankApp logo" style="width: 200px;">
 
-            <div class="form--el">
-                <label for=""></label>
-                <input type="text">
-            </div>
+            <div class="login--title">Login to your BankApp Account</div>
 
-            <button class="btn">Login</button>
+            <form>
+                
+                <div class="login--el">
+                    <label class="input--label" for="username">Username</label>
+                    <input class="input input--user" type="text">
+                </div>
+
+                <div class="login--el">
+                    <label class="input--label" for="password">PIN Password</label>
+                    <input class="input input--user" type="password" maxlength="4">
+                </div>
+
+                <button class="login--btn">Login</button>
+
+            </form>
 
         </div>
 
-    </div>
+    </main>
 
-    <!-- App Dashboard -->
-    <div class="app--dash hidden">
-        <p>App!</p>
-    </div>
+    <!-- App -->
+    <div class="app">
 
-    <script src="script.js" defer></script>
+        <div class="app--content">
+
+            <!-- Menu -->
+            <div class="menu">
+
+                <div class="menu--icon">
+                    <img src="../images/hamburger.svg" alt="menu icon" class="icon">
+                </div>
+                <div class="menu--text">Menu</div>
+
+            </div>
+
+            <!-- Welcome and Balance -->
+            <div class="title">
+
+                <div class="welcome">Welcome back, User!</div>
+                <div class="balance">EUR 28979,45</div>
+
+            </div>
+
+            <!-- Dashboard -->
+            <div class="dash">
+
+                <div class="movements">
+
+                    <div class="move">
+
+                        <div class="move--el">
+                            <div class="type type--deposit">Deposit</div>
+                            <div class="date">12/5/2024</div>
+                        </div>
+
+                        <div class="move--value">2903</div>
+
+                    </div>
+
+                    <div class="move">
+
+                        <div class="move--el">
+                            <div class="type type--withdrawal">Withdrawal</div>
+                            <div class="date">24/6/2023</div>
+                        </div>
+
+                        <div class="move--value">-2034</div>
+
+                    </div>
+
+                    <div class="move">
+
+                        <div class="move--el">
+                            <div class="type type--loan">Loan</div>
+                            <div class="date">24/7/2025</div>
+                        </div>
+
+                        <div class="move--value">2034</div>
+
+                    </div>
+
+                </div>
+
+                <div class="summaries">
+
+                    <div class="box">
+                        <div class="box--title">Incomes</div>
+                        <div class="income">25000</div>
+                    </div>
+
+                    <div class="box">
+                        <div class="box--title">Outcomes</div>
+                        <div class="outcome">25000</div>
+                    </div>
+
+                    <div class="box">
+                        <div class="box--title">Interest %</div>
+                        <div class="interest">12.54</div>
+                    </div>
+
+                    <div class="time--el">
+                        <div class="time--label">Time left to Log Out</div>
+                        <div class="timer">00:00</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+    
+    <script src="/app/script.js" defer></script>
     
 </body>
 </html>
