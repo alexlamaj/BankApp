@@ -8,6 +8,67 @@
 </head>
 <body>
 
+    <!-- Header -->
+    <header class="hidden">
+
+        <div class="header">
+
+            <div class="header--content">
+
+                <img src="../images/left--arrow.svg" alt="Go Back" class="icon">
+
+                <img src="../images/bankapp_logo_light.png" alt="BankApp Logo" style="width: 175px;">
+
+                <div class="actions">
+
+                    <div class="box transfer">
+
+                        <div class="action--title">Transfer Money</div>
+
+                        <div class="action--el">
+                            <input class="input--action input--username" type="text">
+                            <input class="input--action input--amount" type="text">
+                            <button class="btn--action btn--transfer"><img src="../images/right--arrow.svg" alt="Enter" style="width: 20px; height: 20px;"></button>
+                        </div>
+
+                    </div>
+
+                    <div class="box loan">
+
+                        <div class="action--title">Request Loan</div>
+
+                        <div class="action--el">
+                            <input class="input--action input--loan" type="text">
+                            <button class="btn--action btn--loan"><img src="../images/right--arrow.svg" alt="Enter" style="width: 20px; height: 20px;"></button>
+                        </div>
+
+                    </div>
+
+                    <div class="box close">
+
+                        <div class="action--title">Close Account</div>
+
+                        <div class="action--el">
+                            <input class="input--action input--username" type="text">
+                            <input class="input--action input--password" type="password">
+                            <button class="btn--action btn--close"><img src="../images/right--arrow.svg" alt="Enter" style="width: 20px; height: 20px;"></button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="links">
+                    <a class="link" id="logout" href="">Log Out</a>
+                    <a class="link" href="/index.html">Go to Starting Page</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
     <main class="hidden">
 
         <!-- Login -->
@@ -37,30 +98,21 @@
 
     </main>
 
-    <!-- App -->
+    <!-- App Component -->
     <div class="app">
 
         <div class="app--content">
 
-            <!-- Menu -->
-            <div class="menu">
-
-                <div class="menu--icon">
-                    <img src="../images/hamburger.svg" alt="menu icon" class="icon">
-                </div>
-                <div class="menu--text">Menu</div>
-
+            <div class="open--actions">
+                <img src="../images/hamburger.svg" alt="Menu Icon" class="open--icon">
+                <div class="open--text">Actions</div>
             </div>
 
-            <!-- Welcome and Balance -->
-            <div class="title">
-
-                <div class="welcome">Welcome back, User!</div>
-                <div class="balance">EUR 28979,45</div>
-
+            <div class="main--text">
+                <div class="welcome">Welcome back, User</div>
+                <div class="balance">EUR 25384.90</div>
             </div>
 
-            <!-- Dashboard -->
             <div class="dash">
 
                 <div class="movements">
@@ -68,57 +120,57 @@
                     <div class="move">
 
                         <div class="move--el">
-                            <div class="type type--deposit">Deposit</div>
-                            <div class="date">12/5/2024</div>
+                            <div class="move--type type--deposit">Deposit</div>
+                            <div class="date">25/7/2024</div>
                         </div>
 
-                        <div class="move--value">2903</div>
+                        <div class="move--value">2890</div>
 
                     </div>
 
                     <div class="move">
 
                         <div class="move--el">
-                            <div class="type type--withdrawal">Withdrawal</div>
-                            <div class="date">24/6/2023</div>
+                            <div class="move--type type--withdrawal">Withdrawal</div>
+                            <div class="date">25/7/2024</div>
                         </div>
 
-                        <div class="move--value">-2034</div>
+                        <div class="move--value">- 2890</div>
 
                     </div>
 
                     <div class="move">
 
                         <div class="move--el">
-                            <div class="type type--loan">Loan</div>
-                            <div class="date">24/7/2025</div>
+                            <div class="move--type type--loan">Loan</div>
+                            <div class="date">25/7/2024</div>
                         </div>
 
-                        <div class="move--value">2034</div>
+                        <div class="move--value">2890</div>
 
                     </div>
 
                 </div>
 
-                <div class="summaries">
+                <div class="summary">
 
-                    <div class="box">
-                        <div class="box--title">Incomes</div>
-                        <div class="income">25000</div>
+                    <div class="sum--content">
+                        <div class="sum--title">Incomes</div>
+                        <div class="sum--value incomes">2830</div>
                     </div>
 
-                    <div class="box">
-                        <div class="box--title">Outcomes</div>
-                        <div class="outcome">25000</div>
+                    <div class="sum--content">
+                        <div class="sum--title">Outcomes</div>
+                        <div class="sum--value outcomes">2803</div>
                     </div>
 
-                    <div class="box">
-                        <div class="box--title">Interest %</div>
-                        <div class="interest">12.54</div>
+                    <div class="sum--content">
+                        <div class="sum--title">Interest %</div>
+                        <div class="sum--value interest">12.4</div>
                     </div>
 
-                    <div class="time--el">
-                        <div class="time--label">Time left to Log Out</div>
+                    <div class="time">
+                        <div class="time--text">Time Left to Logout</div>
                         <div class="timer">00:00</div>
                     </div>
 
@@ -127,7 +179,7 @@
             </div>
 
         </div>
-        
+
     </div>
     
     <script src="/app/script.js" defer></script>
