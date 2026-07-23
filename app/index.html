@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="/app/styles.css">
     <title>App - BankApp</title>
 </head>
-<body>
+<body class="body">
 
     <!-- Header -->
-    <header class="hidden">
+    <header class="header--tag hidden">
 
         <div class="header">
 
@@ -49,7 +49,7 @@
                         <div class="action--title">Close Account</div>
 
                         <div class="action--el">
-                            <input class="input--action input--username" type="text">
+                            <input class="input--action input--close" type="text">
                             <input class="input--action input--password" type="password">
                             <button class="btn--action btn--close"><img src="../images/right--arrow.svg" alt="Enter" style="width: 20px; height: 20px;"></button>
                         </div>
@@ -69,7 +69,7 @@
 
     </header>
 
-    <main class="hidden">
+    <main class="main">
 
         <!-- Login -->
         <div class="login">
@@ -87,7 +87,7 @@
 
                 <div class="login--el">
                     <label class="input--label" for="password">PIN Password</label>
-                    <input class="input input--user" type="password" maxlength="4">
+                    <input class="input input--pin" type="password" maxlength="4">
                 </div>
 
                 <button class="login--btn">Login</button>
@@ -99,7 +99,7 @@
     </main>
 
     <!-- App Component -->
-    <div class="app">
+    <div class="app hidden">
 
         <div class="app--content">
 
@@ -182,7 +182,7 @@
 
     </div>
     
-    <script src="/app/script.js" defer></script>
+    <script src="app/script.js" defer></script>
     
 </body>
 </html>

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-body {
+.body {
 
     width: 100vw;
     height: 100vh;
@@ -19,12 +19,16 @@ body {
 
 }
 
-header {
+.header--tag {
 
+    position: absolute;
     width: 380px;
     height: 100vh;
     margin: 0px;
     padding: 0px;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
 
 }
 
@@ -184,19 +188,13 @@ header {
 
 }
 
-main {
+.main {
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
     align-items: center;
-
-}
-
-.hidden {
-
-    display: none;
 
 }
 
@@ -395,6 +393,7 @@ main {
     border-radius: 25px;
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
 
 }
 
@@ -425,7 +424,8 @@ main {
     border: none;
     border-radius: 50px;
     color: white;
-    font-size: 15px;
+    font-size: 12px;
+    text-transform: uppercase;
 
 }
 
@@ -447,20 +447,11 @@ main {
 
 }
 
-.date {
-
-    color: #222222;
-    font-family: 'Inter', sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-
-}
-
 .move--value {
 
     color: #222222;
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
 
 }
@@ -547,5 +538,11 @@ main {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     font-weight: 700;
+
+}
+
+.hidden {
+
+    display: none;
 
 }
