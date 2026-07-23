@@ -77,7 +77,7 @@ const openHeader = document.querySelector('.open--icon');
 
 
 // FUNCTIONS & EVENETS //
-let currentAccount;
+let currentAccount, timer;
 
 const createUsernames = function (accs) {
 
@@ -142,6 +142,36 @@ const updateDetails = function (acc) {
 
 };
 
+const startLogOutTimer = function () {
+
+    const tick = function () {
+
+        const minutes = String(Math.trunc(time / 60)).padStart(2, 0);
+        const seconds = String(time % 60).padStart(2, 0);
+
+        labelTimer.textContent = `${minutes}:${seconds}`;
+
+        if (time === 0) {
+
+            clearInterval(timer);
+            loginContainer.classList.remove('hidden');
+            appContainer.classList.add('hidden');
+
+        }
+
+        time--;
+
+    };
+
+    let time = 300;
+
+    tick();
+    const timer = setInterval(tick, 1000);
+
+    return timer;
+
+};
+
 btnLogin.addEventListener('click', function (e) {
 
     e.preventDefault();
@@ -153,6 +183,9 @@ btnLogin.addEventListener('click', function (e) {
         labelWelcome.textContent = `Welcome back, ${currentAccount.name.split(' ')[0]}`;
         loginContainer.classList.add('hidden');
         appContainer.classList.remove('hidden');
+
+        if (timer) clearInterval(timer);
+        timer = startLogOutTimer();
 
         updateDetails(currentAccount);
 
@@ -194,6 +227,9 @@ btnTransfer.addEventListener('click', function (e) {
 
         updateDetails(currentAccount);
 
+        clearInterval(timer);
+        timer = startLogOutTimer();
+
     }
 
     inputUsername.value = inputAmount.value = '';
@@ -211,6 +247,9 @@ btnLoan.addEventListener('click', function (e) {
         currentAccount.movements.push(amount);
 
         updateDetails(currentAccount);
+
+        clearInterval(timer);
+        timer = startLogOutTimer();
 
         inputLoan.value = '';
 
