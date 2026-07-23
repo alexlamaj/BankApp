@@ -14,3 +14,7 @@ In order to test the app's features you can use these usernames (aj, jp, sj, cs)
 Build
 -----------------------
 Built entirely using HTML, CSS, and JavaScript, without the use of any tools or frameworks
+
+Features
+-----------------------
+You can check and learn about the BankApp's features by reading the starting page --> features section
