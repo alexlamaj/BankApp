@@ -10,3 +10,7 @@ Run ng start in your terminal to start a dev server. Visit the https://localhost
 Built-with
 ---------------------
 Coded with HTML for the structure, CSS for the styling, and JavaScript for the data and event handlers.
+
+Test Data
+---------------------
+In order to test the app's features you can use these data: Usernames = [aj, cs, js, sp], and Pins = [111, 222, 333, 444]
