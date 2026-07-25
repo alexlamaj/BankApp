@@ -1,0 +1,15 @@
+{
+  "name": "bankapp",
+  "version": "1.0.0",
+  "description": "Personal Project built with educational purpose and training. A banking app project which starts with a landing page and then proceeds to the App. Built entirely with HTML, CSS, and JavaScript, using node.js for the npm server.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve"
+  },
+  "author": "Alessandro Lamaj",
+  "license": "ISC",
+  "dependencies": {
+    "serve": "^14.2.6"
+  }
+}
