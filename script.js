@@ -62,3 +62,36 @@ next.addEventListener('click', function () {
     toSlide(currentSlide);
 
 });
+
+// FAQ //
+const items = document.querySelectorAll('.faq--el');
+const answers = document.querySelectorAll('.answer');
+const icons = document.querySelectorAll('.drop');
+
+items.forEach((item, index) => {
+
+    item.addEventListener('click', function () {
+
+        answers[index].classList.toggle('answer--active');
+        icons[index].classList.toggle('drop--active');
+
+    });
+
+});
+
+// Smooth Scrolling //
+const links = document.querySelectorAll('nav a');
+
+links.forEach(link => {
+
+    link.addEventListener('click', function (e) {
+
+        e.preventDefault();
+
+        const target = document.querySelector(link.getAttribute('href'));
+
+        target.scrollIntoView({behavior: 'smooth', block: 'start'});
+
+    });
+
+});

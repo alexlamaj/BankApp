@@ -13,13 +13,38 @@ body {
 
 main {
 
-    padding: 60px 20px;
+    padding: 30px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
     align-items: center;
-    gap: 80px;
+    gap: 100px;
+
+}
+
+header {
+
+    padding: 20px;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.nav {
+
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+}
+
+.nav--links {
+
+    display: none;
 
 }
 
@@ -221,7 +246,7 @@ footer {
 
 .stroke {
 
-    width: 60%;
+    width: 250px;
     border-bottom: 2px solid #155815;
 
 }
@@ -297,6 +322,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 10px;
 
 }
 
@@ -358,6 +384,14 @@ footer {
 
     display: none;
     padding: 0px 25px;
+
+}
+
+.client--name {
+
+    color: #222222;
+    font-size: 15px;
+    font-weight: 500;
 
 }
 
@@ -449,4 +483,442 @@ footer {
     box-shadow: none;
     border: 2px solid #27A127;
 
+}
+
+.faq {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.faq--item {
+
+    width: 100%;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.faq--el {
+
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+}
+
+.drop {
+
+    transform: rotate(180deg);
+
+}
+
+.drop--active {
+
+    transform: none;
+    transition: all 0.3s;
+
+}
+
+.question {
+
+    color: #27A127;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.answer {
+
+    margin: 10px 20px;
+    display: none;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+.answer--active {
+
+    display: block;
+
+}
+
+@media screen and (min-width: 769px) {
+
+    main {
+
+        padding: 80px;
+        gap: 200px;
+
+    }
+
+    header {
+
+        padding: 10px 80px;
+
+    }
+
+    .nav {
+
+        gap: 60px;
+
+    }
+
+    .nav--links {
+
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+
+    }
+
+    .link {
+
+        color: #222222;
+        font-size: 18px;
+        text-decoration: none;
+
+    }
+
+    .link:hover {
+
+        color: #27A127;
+
+    }
+
+    .link:active {
+
+        color: #155815;
+
+    }
+
+    .btn {
+
+        width: max-content;
+        padding: 10px 25px;
+        border: 2px solid #27A127;
+        font-size: 15px;
+        font-weight: 500;
+
+    }
+
+    footer {
+
+        padding: 80px 240px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+
+    }
+
+    .left {
+
+        gap: 20px;
+
+    }
+
+    .copyright {
+
+        font-size: 14px;
+        font-weight: 400;
+
+    }
+
+    .design {
+
+        font-size: 12px;
+        font-weight: 400;
+
+    }
+
+    .footer--nav {
+
+        gap: 20px;
+
+    }
+
+    .footer--link {
+
+        font-size: 16px;
+
+    }
+
+    .logo {
+
+        width: 160px;
+
+    }
+
+    .hero {
+
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    .hero--content {
+
+        gap: 35px;
+
+    }
+
+    .hero--title {
+
+        font-size: 40px;
+        font-weight: 700;
+
+    }
+
+    .hero--text {
+
+        font-size: 24px;
+
+    }
+
+    .btn--2 {
+
+        padding: 10px 25px;
+        border: 2px solid #27A127;
+        font-size: 14px;
+
+    }
+
+    .btn--2:active {
+
+        border: 2px solid #155815;
+
+    }
+
+    .sections {
+
+        width: 100%;
+        gap: 60px;
+
+    }
+
+    .section--title {
+
+        gap: 25px;
+
+    }
+
+    .title {
+
+        font-size: 32px;
+
+    }
+
+    .stroke {
+
+        width: 320px;
+        border-bottom: 3px solid #27A127;
+
+    }
+
+    .subtitle {
+
+        font-size: 24px;
+
+    }
+
+    .content {
+
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    .desc {
+
+        font-size: 20px;
+
+    }
+
+    .specs {
+
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 35px;
+
+    }
+
+    .specs--box {
+
+        padding: 20px 35px;
+
+    }
+
+    .spec--title {
+
+        font-size: 22px;
+
+    }
+
+    .text {
+
+        font-size: 18px;
+
+    }
+
+    .features {
+
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+    }
+
+    .tab--buttons {
+
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+    }
+
+    .tab {
+
+        width: 800px;
+        padding: 25px 40px;
+        justify-self: center;
+
+    }
+
+    .testimonials {
+
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+    }
+
+    .test--content {
+
+        gap: 25px;
+
+    }
+
+    .icon {
+
+        padding: 10px;
+
+    }
+
+    .client {
+
+        width: 800px;
+
+    }
+
+    .client--name {
+
+        font-size: 23px;
+        font-weight: 600;
+
+    }
+
+    .client--active {
+
+        gap: 25px;
+
+    }
+
+    .dots {
+
+        gap: 15px;
+
+    }
+
+    .dot {
+
+        padding: 8px;
+
+    }
+
+    .contact {
+
+        width: 100%;
+        flex-direction: row;
+        gap: 35px;
+
+    }
+
+    .form {
+
+        width: 80%;
+        justify-content: space-between;
+        gap: 0px;
+
+    }
+
+    .form--el {
+
+        gap: 15px;
+
+    }
+
+    .form--label {
+
+        font-size: 20px;
+
+    }
+
+    .input {
+
+        padding: 12px 20px;
+        border-radius: 15px;
+        font-size: 14px;
+
+    }
+
+    .faq {
+
+        width: 800px;
+
+    }
+
+    .faq--item {
+
+        border-radius: 20px;
+
+    }
+
+    .faq--el {
+
+        margin: 12px 24px;
+        gap: 20px;
+
+    }
+
+    .question {
+
+        font-size: 20px;
+
+    }
+
+    .answer {
+
+        margin: 12px 24px;
+        font-size: 17px;
+        font-weight: 400;
+
+    }
+    
 }
