@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/app/styles.css">
+    <title>BankApp - App</title>
+</head>
+<body>
+
+    <!-- Login -->
+    <div class="login">
+
+        <div class="login--content">
+
+            <img class="logo" src="../images/bankapp-logo-light.png" alt="BankApp Logo">
+
+            <div class="login--title">Login to your BankApp Account</div>
+
+            <div class="form">
+
+                <div class="form--el">
+                    <label class="form--label" for="username">Username</label>
+                    <input class="input" id="user" type="text">
+                </div>
+
+                <div class="form--el">
+                    <label class="form--label" for="password">PIN Password</label>
+                    <input class="input" id="pin" type="password" maxlength="4">
+                </div>
+
+            </div>
+
+            <button class="btn btn--login">Login</button>
+
+        </div>
+
+    </div>
+
+    <header class="hidden">
+
+        <div class="header">
+
+        <div class="header--content">
+
+            <img class="back" src="../images/left-arrow.svg" alt="Go Back">
+
+            <img class="logo" src="../images/bankapp-logo-light.png" alt="BankApp Logo">
+
+            <div class="acts">
+
+                <div class="act--transfer">
+                    
+                    <div class="acts--title">Transfer Money</div>
+
+                    <div class="act">
+                        <input class="act--input" id="receiver" type="text" placeholder="To">
+                        <input class="act--input" id="amount" type="text" placeholder="Amount">
+                        <button class="btn--sub btn--transfer"><img class="icon--sub" src="../images/right-arrow.svg" alt="Right Arrow"></button>
+                    </div>
+
+                </div>
+
+                <div class="act--loan">
+
+                    <div class="acts--title">Loan Request</div>
+
+                    <div class="act">
+                        <input class="act--input" id="loan--amount" type="text" placeholder="Amount">
+                        <button class="btn--sub btn--loan"><img class="icon--sub" src="../images/right-arrow.svg" alt="Right Arrow"></button>
+                    </div>
+                
+                </div>
+
+                <div class="act--close">
+
+                    <div class="acts--title">Close Account</div>
+
+                    <div class="act">
+                        <input class="act--input" id="username" type="text" placeholder="Username">
+                        <input class="act--input" id="password" type="text" placeholder="PIN">
+                        <button class="btn--sub btn--close"><img class="icon--sub" src="../images/right-arrow.svg" alt="Right Arrow"></button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="links">
+
+                <a class="link" id="logout" href="#">Logout</a>
+                <a class="link" href="../index.html">Go to Starting Page</a>
+                
+            </div>
+
+        </div>
+
+        </div>
+
+    </header>
+
+    <main class="hidden">
+
+        <div class="app">
+
+            <div class="actions">
+                <img class="icon" src="../images/hamburger-icon.svg" alt="Menu Icon">
+                <div class="menu--text">Actions</div>
+            </div>
+
+            <div class="title">
+                <div class="welcome">Welcome back, User!</div>
+                <div class="balance">EUR 27302.47</div>
+            </div>
+
+            <div class="content">
+
+                <div class="movements">
+
+                    <div class="movement">
+                        <div class="type type--deposit">Deposit</div>
+                        <div class="amount">2890</div>
+                    </div>
+
+                    <div class="movement">
+                        <div class="type type--withdraw">Withdrawal</div>
+                        <div class="amount">-1340</div>
+                    </div>
+
+                    <div class="movement">
+                        <div class="type type--loan">Loan</div>
+                        <div class="amount">350</div>
+                    </div>
+
+                </div>
+
+                <div class="summary">
+
+                    <div class="sum">
+                        <div class="text">Incomes</div>
+                        <div class="incomes">2837</div>
+                    </div>
+
+                    <div class="sum">
+                        <div class="text">Outcomes</div>
+                        <div class="outcomes">1728</div>
+                    </div>
+
+                    <div class="sum">
+                        <div class="text">Interest</div>
+                        <div class="interest">12.3%</div>
+                    </div>
+
+                    <div class="time">
+                        <div class="time--text">Time Left to Logout</div>
+                        <div class="timer">00:00</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="/app/script.js" defer></script>
+    
+</body>
+</html>

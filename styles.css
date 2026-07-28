@@ -856,6 +856,7 @@ footer {
 
         width: 100%;
         flex-direction: row;
+        align-items: center;
         gap: 35px;
 
     }
@@ -863,8 +864,7 @@ footer {
     .form {
 
         width: 80%;
-        justify-content: space-between;
-        gap: 0px;
+        gap: 35px;
 
     }
 
