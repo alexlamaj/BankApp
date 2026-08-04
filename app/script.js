@@ -129,8 +129,39 @@ const updateDisplay = function (acc) {
 
 }
 
+const startLogoutTimer = function () {
+
+    const tick = function () {
+
+        const min = String(Math.trunc(time / 60)).padStart(2, 0);
+        const sec = String(time % 60).padStart(2, 0);
+
+        labelTimer.textContent = `${min}:${sec}`;
+
+        if (time === 0) {
+
+            clearInterval(timer);
+            headerContainer.classList.add('hidden');
+            appContainer.classList.add('hidden');
+            loginContainer.classList.remove('hidden');
+
+        }
+
+        time--;
+
+    };
+
+    let time = 120;
+
+    tick();
+    const timer = setInterval(tick, 1000);
+
+    return timer;
+
+};
+
 // EVENTS //
-let currentAccount;
+let currentAccount, timer;
 
 btnLogin.addEventListener('click', function (e) {
 
@@ -144,6 +175,9 @@ btnLogin.addEventListener('click', function (e) {
         appContainer.classList.remove('hidden');
 
         labelWelcome.textContent = `Welcome back, ${currentAccount.user.split(' ')[0]}`;
+
+        if (timer) clearInterval(timer);
+        timer = startLogoutTimer();
 
         updateDisplay(currentAccount);
 
